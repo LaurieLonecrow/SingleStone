@@ -1,9 +1,15 @@
-import logo from './logo.svg';
+//components
+import Header from './components/Header'
+
+//styles
 import './App.css';
 
 function App() {
   return (
-    Single Stone App
+    <div>
+      <Header/>
+      SingleStone App
+    </div>
   );
 }
 

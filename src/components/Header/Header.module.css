@@ -1,0 +1,22 @@
+.header_background {
+    background-color: rgba(34,34,34,255)    ;
+    width: 100vw;
+    padding: .6rem 14rem .6rem;
+}
+
+.logo {
+    width: 10%;
+}
+
+@media screen and (max-width: 576px) {
+    .header_background {
+        padding: .5rem 2rem;
+    }
+    
+    .logo {
+        width: 20%;
+    }
+
+    
+  
+  }
