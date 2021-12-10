@@ -7,6 +7,7 @@
     padding: .35rem 1.2rem;
 }
 
-.button:hover {
+.button:hover,
+.button:active {
     background-color: #8ae7d3;
 }

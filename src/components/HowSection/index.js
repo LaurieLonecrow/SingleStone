@@ -5,15 +5,13 @@ import Card from './Card'
 import styles from './HowSection.module.css';
 
 export default function HowSection() {
-    const[ howTos, setHowTos ] = useState([])
-    console.log(howTos)
+    const [howTos, setHowTos] = useState([])
+
     const getAllHowTos = async () => {
     await fetch('https://uqnzta2geb.execute-api.us-east-1.amazonaws.com/default/FrontEndCodeChallenge')
     .then(res => res.json())
     .then(data => setHowTos(data.sort((a,b) => a.stepNumber - b.stepNumber)))
     }
-
-    
 
     useEffect(() => {
     getAllHowTos();
@@ -26,12 +24,14 @@ export default function HowSection() {
             <h2 className={styles.how_title}>How It Works</h2>
             <div className={styles.how_section}>
             {howTos.map(step => (
-                <Card key={step.id}
-                      stepNumber={step.stepNumber}
-                      title={step.versionContent[0].title}
-                      body={step.versionContent[0].body}
+              <Card key={step.id}
+                    stepNumber={step.stepNumber}
+                    title={step.versionContent.sort((a,b) => 
+                        new Date(b.effectiveDate) - new Date(a.effectiveDate))[0].title}
+                    body={step.versionContent.sort((a,b) => 
+                        new Date(b.effectiveDate) - new Date(a.effectiveDate))[0].body}
                       />
-            ))}
+                      ))}
             </div>
             </>
             : null }
@@ -40,5 +40,3 @@ export default function HowSection() {
     )
 }
 
-//I see that step number 3 requires a different versionContent title, but I need 
-//to think about it longer to come up with a clean way to dynamically change that.
