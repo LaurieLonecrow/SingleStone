@@ -20,7 +20,8 @@
 }
 
 @media screen and (max-width: 576px) {
-    .hero_container {
+
+.hero_container {
     bottom: 5%;
     left: 10%;
     width: 60%;

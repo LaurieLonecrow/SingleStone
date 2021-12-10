@@ -39,3 +39,6 @@ export default function HowSection() {
         </div>
     )
 }
+
+//I see that step number 3 requires a different versionContent title, but I need 
+//to think about it longer to come up with a clean way to dynamically change that.
