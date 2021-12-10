@@ -2,8 +2,11 @@
     background-color: #47e4c2;
     border: none;
     border-radius: 50px;
-    font-family: 'Lato' sans-serif;
-    font-size: .6rem;
+    font-size: .7rem;
     font-weight: 400;    
     padding: .35rem 1.2rem;
+}
+
+.button:hover {
+    background-color: #8ae7d3;
 }
