@@ -19,8 +19,9 @@
 }
 
 .card_title {
+    font-size: .9rem;
     text-transform: uppercase;
-    padding: 2%;
+    padding: 2% 0;
 }
 
 .card_body {
