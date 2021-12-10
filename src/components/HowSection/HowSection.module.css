@@ -1,6 +1,12 @@
+.how_wrapper {
+    background-color: #f2f1ef;
+    padding: 2rem;
+}
+
 .how_title {
     font-weight: 400;
     letter-spacing: 2px;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     top: 10%;
@@ -8,3 +14,18 @@
     right: 0;
     text-align: center;
 }
+
+.how_section {
+    display: flex;
+}
+
+@media screen and (max-width: 700px) {
+    
+}
+
+@media screen and (max-width: 576px) {
+    .how_section {
+        flex-direction: column;
+    }
+
+  }
