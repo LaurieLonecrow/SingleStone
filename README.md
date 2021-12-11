@@ -1,4 +1,6 @@
-# Getting Started with SingleStone Tech-Assessment App 
+# SingleStone Tech-Assessment App
+
+## Getting Started  
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
