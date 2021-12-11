@@ -1,9 +1,8 @@
 //styles
-import styles from './Card.module.css'
+import styles from './Card.module.css';
 
 export default function Card({stepNumber, title, body}) {
     
-
     return (
         <div className={styles.card_wrapper}
              data-testid="card-element">

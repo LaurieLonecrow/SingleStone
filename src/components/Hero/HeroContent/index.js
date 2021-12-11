@@ -9,6 +9,5 @@ export default function HeroContent({text}) {
           <p className={styles.hero_content}>{text}</p>
         </div>
         
-
     )
 }

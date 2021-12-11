@@ -1,8 +1,8 @@
 //components
-import Button from '../Button'
+import Button from '../Button';
 import HeroTitle from './HeroTitle';
 import HeroSubtitle from './HeroSubtitle';
-import HeroContent from './HeroContent'
+import HeroContent from './HeroContent';
 
 //styles 
 import styles from './Hero.module.css';
@@ -23,7 +23,6 @@ export default function Hero() {
             }/>
             <Button text={'GET STARTED'}/>
             </div>
-            
         </div>
     )
 };

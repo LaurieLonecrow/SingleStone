@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react'
+
 //components
-import Card from './Card'
+import Card from './Card';
+
 //styles
 import styles from './HowSection.module.css';
 
@@ -35,7 +37,6 @@ export default function HowSection() {
             </div>
             </>
             : null }
-               
         </div>
     )
 }
