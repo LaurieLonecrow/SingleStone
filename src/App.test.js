@@ -1,8 +1,10 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import Card from './components/HowSection/Card';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
+test('renders Card if data is available', () => {
+  render(<Card />);
+  const linkElement = screen.getByTestId('card-element');
   expect(linkElement).toBeInTheDocument();
 });
+
+
