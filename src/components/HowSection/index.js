@@ -7,24 +7,24 @@ import Card from './Card';
 import styles from './HowSection.module.css';
 
 export default function HowSection() {
-    const [howTos, setHowTos] = useState([])
+    const [howTos, setHowTos] = useState([]);
 
     const getAllHowTos = async () => {
     await fetch('https://uqnzta2geb.execute-api.us-east-1.amazonaws.com/default/FrontEndCodeChallenge')
     .then(res => res.json())
-    .then(data => setHowTos(data.sort((a,b) => a.stepNumber - b.stepNumber)))
-    }
+    .then(data => setHowTos(data.sort((a,b) => a.stepNumber - b.stepNumber)));
+    };
 
     useEffect(() => {
     getAllHowTos();
-    },[])
+    },[]);
 
-    return (
-        <div className={styles.how_wrapper}>
-            {howTos ? 
-            <>
-            <h2 className={styles.how_title}>How It Works</h2>
-            <div className={styles.how_section}>
+  return (
+    <div className={styles.how_wrapper}>
+      {howTos ? 
+        <>
+          <h2 className={styles.how_title}>How It Works</h2>
+          <div className={styles.how_section}>
             {howTos.map(step => (
               <Card key={step.id}
                     stepNumber={step.stepNumber}
@@ -34,10 +34,10 @@ export default function HowSection() {
                         new Date(b.effectiveDate) - new Date(a.effectiveDate))[0].body}
                       />
                       ))}
-            </div>
-            </>
-            : null }
-        </div>
-    )
-}
+          </div>
+        </>
+      : null }
+    </div>
+  );
+};
 

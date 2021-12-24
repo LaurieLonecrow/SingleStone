@@ -11,6 +11,6 @@ function App() {
       <HowSection/>
     </div>
   );
-}
+};
 
 export default App;
